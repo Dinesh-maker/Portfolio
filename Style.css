@@ -20,8 +20,8 @@ html{
     text-decoration: none;
 }
 .nav-link:hover{
-    color: rgb(22, 23, 73);
-    background-color: rgb(211, 208, 208);
+    color: white;
+    background-color: black;
 }
 .navbar-brand{
     font-size: 1.25rem;
