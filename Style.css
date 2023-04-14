@@ -12,16 +12,16 @@ html{
  background-color: white;
 }
 
-.navbar-nav a {
+.nav-link {
     color:black;
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
     text-decoration: none;
 }
-.navbar-nav a :hover{
-    color: white;
-    background-color: black;
+.nav-link:hover{
+    color: rgb(22, 23, 73);
+    background-color: rgb(211, 208, 208);
 }
 .navbar-brand{
     font-size: 1.25rem;
