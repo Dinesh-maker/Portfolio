@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
   <body>
     
-    <nav class="navbar navbar-expand-md fixed-top text-uppercase ">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top text-uppercase ">
         <div class="container">
         <a class="navbar-brand font-weight-bold" href="#">PortFolio</a>
-        <button class="navbar-toggler" style="border: 2px solid rgb(16, 16, 85);margin-left: -30px;" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
@@ -31,19 +31,44 @@
      
         
     <!-- Main Section -->
-      <section class="main py-5">
+    <!-- <div class="container py-5 main ">
+     <div class="row">
+    <div class="col-6">
+      <h3 class="py-3"><small>Hello , I am </small> <br>
+        Dinesh
+    </h3>
+    <h6 class="pt-3">Front End Developer</h6>
+    <button class="bt1 mt-5 mr-3"> <a href="https://drive.google.com/file/d/1cmRX6aWcShwwCDZS2xTpQMoN_HwFSY-a/view?usp=share_link" >Download CV</a></button>
+  
+     <input type="button" value="My Work" class="bt2 mt-5"  >
+    </div>
+     </div>
+    </div> -->
+    <section class="main pt-5">
         <div class="container py-5">
             <div class="row ">
                 <div class="col-sm-6  mb-5">
-                    <h3 class="py-5"><small>Hello , I am </small> <br>
-                        Dinesh
+                    <h3 class="py-3"><small>Hello , I am </small> <br>
+                        <h3 class="dinesh pb-3">Dinesh</h3>
+                        <script>
+                          let title=document.querySelector('.dinesh');
+                          let name = "Dinesh";
+                          let Index=0;
+                          const typewriter =()=> {
+                            let newtitle =name.slice(0,Index);
+                            title.innerText=newtitle;
+                            Index > name.length ? Index =0 : Index++;
+                            setTimeout( ()=>typewriter(),1000);
+                          }
+                          typewriter();
+                        </script>
                     </h3>
                     <h6 class="pt-3">Front End Developer</h6>
                     <button class="bt1 mt-5 mr-3"> <a href="https://drive.google.com/file/d/1cmRX6aWcShwwCDZS2xTpQMoN_HwFSY-a/view?usp=share_link" >Download CV</a></button>
                   
-                     <input type="button" value="My Work" class="bt2 mt-5"  >
+                   <a href="#work">  <input type="button" value="My Work" class="bt2 mt-5"  ></a>
                 </div>
-                <div class="col-sm-6 pb-4">
+                <div class="col-sm-6 ">
                     <img src="./images/dinesh.png" class="img">
                   </div>
             </div>

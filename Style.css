@@ -2,6 +2,7 @@
     padding :0;
     margin :0;
     box-sizing :border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 html{
   scroll-behavior: smooth;
@@ -20,8 +21,8 @@ html{
     text-decoration: none;
 }
 .nav-link:hover{
-    color: white;
-    background-color: black;
+   
+    background-color: rgba(117, 83, 83, 0.253);
 }
 .navbar-brand{
     font-size: 1.25rem;
@@ -48,6 +49,8 @@ html{
 }
 .img{
     border-radius: 50%;
+    width: 400px;
+    height: 350px;
     
 }
 .main .bt1{
@@ -77,6 +80,7 @@ transition: 0.5s;
    font-weight: bold;
    border-radius: 5px;
    }
+  
    .main .bt2:hover{
     background-color:rgb(233,20,109);
     transition: 0.5s;
